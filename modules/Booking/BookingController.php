@@ -34,7 +34,6 @@ class BookingController extends Controller
                 $index = $v['counter'] += 1;
             }
             return $index;
-
         }
     }
 
