@@ -40,6 +40,17 @@
                 <input type="checkbox" name="correct"/>
             </div>
             <div class="clear"></div>
+            <div class="large-12 columns">
+                <div class="columns large-6">
+                    <label for="ba">Bachelordozent</label>
+                    <input type="checkbox" id="ba" name="ba"/>
+                </div>
+                <div class="columns large-6">
+                    <label for="diploma">Diplomadozent</label>
+                    <input type="checkbox" id="diploma" name="diploma"/>
+                </div>
+            </div>
+            <div class="clear"></div>
             <?php
                 if(isset($_GET['lecturerSelect'])){
                     echo '<p class="large-12 columns">Output:<br />'.str_replace(', ', '_',$precounter.$index).'.pdf</p>';
@@ -65,6 +76,7 @@
             <td>Block</td>
             <td>Start</td>
             <td>Dauer</td>
+            <td>Raum</td>
         </tr>
         <span class="viewport">
 
@@ -84,6 +96,7 @@
                             <td><input type="text" value="'.$v['chapter'].'" form="bookingform" name="update_chapter_'.$v['id_b'].'" /></td>
                             <td><input type="text" value="'.$v['time'].'" form="bookingform" name="update_time_'.$v['id_b'].'" /></td>
                             <td><input type="text" value="'.$v['duration'].'" form="bookingform" name="update_duration_'.$v['id_b'].'" /></td>
+                            <td><input type="text" value="'.$v['location'].'" form="bookingform" name="update_duration_'.$v['id_b'].'" /></td>
                         </tr>');
                 }
             }

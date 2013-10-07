@@ -46,7 +46,7 @@ class Model
 
     public function getLectures()
     {
-        $sql = 'SELECT * FROM lectures';
+        $sql = 'SELECT * FROM lectures ORDER BY date ASC';
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -77,7 +77,7 @@ class Model
 
     public function getLecturesForPDF()
     {
-        $sql = 'SELECT b.*, a.mph, a.ba FROM lecturers a,  lectures b WHERE a.name = b.teacher AND a.id = :id ORDER BY name ASC';
+        $sql = 'SELECT b.*, a.mph, a.ba FROM lecturers a,  lectures b WHERE a.name = b.teacher AND a.id = :id ORDER BY date ASC';
         $stmt = $this->db->prepare($sql);
         $stmt->execute(
             array(
@@ -133,13 +133,13 @@ class Model
         $sql = 'INSERT INTO lectures
                     (course, subject, class, chapter, teacher, location, date, time, duration, content, att_type, material)
                     VALUES
-                    (:course, :subject, :class, :chapter, :teacher, :location, :date, :time, :duration, :content, :att_type, :material)
-                    ON DUPLICATE KEY UPDATE
-                    course = :course, subject = :subject, class = :class, chapter = :chapter, teacher = :teacher, location = :location,
-                    date = :date, time = :time, duration = :duration, content = :content, att_type = :att_type, material = :material';
+                    (:course, :subject, :class, :chapter, :teacher, :location, :date, :time, :duration, :content, :att_type, :material)';
         $stmt = $this->db->prepare($sql);
         foreach ($csv as $k => $v) {
             if ($v['0'] != 'Course' && $v['1'] != 'Subject') {
+                $datum = explode('.', $v['6']);
+                $datum = strtotime($datum[2].'-'.$datum[1].'-'.$datum[0]);
+                $datum = date('Y-m-d', $datum);
                 $stmt->execute(
                     array(
                         ':course'   => $v['0'],
@@ -148,7 +148,7 @@ class Model
                         ':chapter'  => $v['3'],
                         ':teacher'  => $v['4'],
                         ':location' => $v['5'],
-                        ':date'     => $v['6'],
+                        ':date'     => $datum,
                         ':time'     => $v['7'],
                         ':duration' => $v['8'],
                         ':content'  => $v['9'],

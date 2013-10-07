@@ -35,7 +35,7 @@ class PDF extends FPDF{
         $this->BasicTable();
         $this->Ln(10);
         $this->Overview();
-        $this->Ln(15);
+        $this->Ln(25);
         $this->SubtextDiploma();
         $this->SetFont('Arial', 'B', 12);
         // TODO Datum und Auftragsnummer anfügen
@@ -45,60 +45,95 @@ class PDF extends FPDF{
     function BasicTable()
     {
 
-        $header = array('Datum', 'Thema', 'Kurs', 'Block', 'Zeit', 'Dauer/h');
+        $header = array('Datum', 'Thema', 'Kurs', 'Raum', 'Block', 'Zeit', 'min');
         $data = $_POST['pdfDataLectures'];
         //Header
         $this->SetFont('Arial','B',12);
         $this->Cell(22,7,$header[0],1,0,'C');
-        $this->Cell(61,7,$header[1],1,0,'C');
-        $this->Cell(46,7,$header[2],1,0,'C');
-        $this->Cell(14,7,$header[3],1,0,'C');
-        $this->Cell(21,7,$header[4],1,0,'C');
-        $this->Cell(21,7,$header[5],1,0,'C');
+        $this->Cell(70,7,$header[1],1,0,'C');
+        $this->Cell(26,7,$header[2],1,0,'C');
+        $this->Cell(30,7,$header[3],1,0,'C');
+        $this->Cell(14,7,$header[4],1,0,'C');
+        $this->Cell(12,7,$header[5],1,0,'C');
+        $this->Cell(12,7,$header[6],1,0,'C');
         $this->Ln();
         //Data
-        foreach($data as $row)
+        $i = 0;
+        foreach($data as $key => $value)
         {
-            // TODO Multicell Dynamisch machen für mehr Content - siehe PDF
-//            $x = $this->GetX();
-//            $y = $this->GetY();
-            //print($x.':'.$y); die();
-            $this->SetFont('Arial','',10);
-            $_POST['completeTime'] += $row['duration'];
-            $this->Cell(22,6,$row['date'],1,0,'C');
-            $this->SetFillColor(255, 0, 0);
-            $this->Cell(61,6,utf8_decode($row['subject']),1,0,'C', 'F');
-//            $this->SetXY($x + 83, $y);
-            $this->Cell(46,6,utf8_decode($row['course']),1,0,'C');
-            $this->Cell(14,6,$row['chapter'],1,0,'C');
-            $this->Cell(21,6,$row['time'],1,0,'C');
-            $this->Cell(21,6,$row['duration']/60,1,0,'C');
-            $this->Ln();
+            $datum = explode('-', $value['date']);
+            $key++;
+            if($data[$key]['subject'] == $value['subject'] &&
+               $data[$key]['date'] == $value['date'] &&
+               $data[$key]['chapter'] == $value['chapter'] &&
+               $data[$key]['time'] == $value['time'] &&
+               $data[$key]['location'] == $value['location']){
+
+                $this->SetFont('Arial','',10);
+                $this->Cell(22,6,$datum[2].'.'.$datum[1].'.'.$datum[0],1,0,'C');
+                $this->Cell(70,6,utf8_decode($value['subject']),1,0,'C');
+                $this->Cell(26,6,utf8_decode($value['course']),1,0,'C');
+                $this->Cell(30,6,utf8_decode($value['location']),1,0,'C');
+                $this->Cell(14,6,$value['chapter'],1,0,'C');
+                $this->Cell(12,6,' - ',1,0,'C');
+                $this->Cell(12,6,' - ',1,0,'C');
+                $this->Ln();
+                $_POST['CompleteTime'] -= $value['duration'];
+
+            }else{
+                $this->SetFont('Arial','',10);
+                $_POST['completeTime'] += $value['duration'];
+                $this->Cell(22,6,$datum[2].'.'.$datum[1].'.'.$datum[0],1,0,'C');
+                $this->Cell(70,6,utf8_decode($value['subject']),1,0,'C');
+                $this->Cell(26,6,utf8_decode($value['course']),1,0,'C');
+                $this->Cell(30,6,utf8_decode($value['location']),1,0,'C');
+                $this->Cell(14,6,$value['chapter'],1,0,'C');
+                $this->Cell(12,6,$value['time'],1,0,'C');
+                $this->Cell(12,6,$value['duration'],1,0,'C');
+                $this->Ln();
+            }
+
         }
+
     }
 
     function Overview(){
         $this->SetFont('Arial', 'B', 11);
-        $this->Cell(0,10,'Gesamtstundenzahl: '.$_POST['completeTime']/60 .'h      Stundensatz: '.chr(128).' '.$_POST['pdfDataPerson']['0']['mph'].'      Gesamthonorar: '.$_POST['pdfDataPerson']['0']['mph'] * $_POST['completeTime']/60 .' '.chr(128).'',0,0,'C');
+        $this->Cell(0,10,'Gesamtstundenzahl: '.round($_POST['completeTime']/60, 1) .'h      Stundensatz: '.$_POST['pdfDataPerson']['0']['mph'].' '.chr(128).'      Gesamthonorar: '.$_POST['pdfDataPerson']['0']['mph'] * $_POST['completeTime']/60 .' '.chr(128).'',0,0,'C');
     }
 
     function SubtextDiploma(){
 
+        if(isset($_POST['diploma']) || !isset($_POST['diploma']) && !isset($_POST['ba'])){
+            $this->SetFont('Arial','',11);
+            $this->Cell(0,10,'Es gelten folgende Vorgaben:',0,0,'L');
+            $this->SetLeftMargin(20);
+            $this->Ln(8);
+            $this->Cell(0,10,utf8_decode('- je 2,5 Stunden Vorlesung ist eine Pause von ca. 15 Minuten vorgesehen'),0,0,'L');
+            $this->Ln(8);
+            $this->MultiCell(0,5,utf8_decode('- der Dozent muss zu jedem Vorlesungsthema entsprechende Prüfungsfragen freigeben bzw. zur Verfügung stellen' ), 0, 'L');
+            $this->Ln(1);
+            $this->MultiCell(0,5,utf8_decode('- der Dozent hat rechtzeitig (2 Wochen vorab) mit dem Fachbereichsleiter abzustimmen, welches Equipment/Material er benötigt'),0,'L');
+            $this->Ln(1);
+            $this->MultiCell(0,5,utf8_decode('- eventuelle Handouts/Kopiervolagen müssen 1 Woche im Voraus beim Fachbereichsleiter eingehen, um den rechtzeitigen Druck sicherzustellen'),0,'L');
+            $this->Ln(1);
+            $this->Cell(0,5,utf8_decode('- das Honorar berechnet sich aufgrund der tatsächlich gehaltenen Stunden'),0,0,'L');
+            $this->Ln(30);
+            $this->getLastpage();
+        }elseif(isset($_POST['ba'])){
+            $this->SetFont('Arial','',11);
+            $this->Cell(0,10,'Es gelten folgende Vorgaben:',0,0,'L');
+            $this->SetLeftMargin(20);
+            $this->Ln(8);
+            $this->MultiCell(0,5,utf8_decode('- der Dozent hat rechtzeitig (2 Wochen vorab) mit dem Fachbereichsleiter abzustimmen, welches Equipment/Material er benötigt'),0,'L');
+            $this->Ln(1);
+            $this->MultiCell(0,5,utf8_decode('- eventuelle Handouts/Kopiervolagen müssen 1 Woche im Voraus beim Fachbereichsleiter eingehen, um den rechtzeitigen Druck sicherzustellen'),0,'L');
+            $this->Ln(1);
+            $this->Cell(0,5,utf8_decode('- das Honorar berechnet sich aufgrund der tatsächlich gehaltenen Stunden'),0,0,'L');
+            $this->Ln(30);
+            $this->getLastpage();
+        }
 
-        $this->SetFont('Arial','',11);
-        $this->Cell(0,10,'Es gelten folgende Vorgaben:',0,0,'L');
-        $this->SetLeftMargin(20);
-        $this->Ln(8);
-        $this->Cell(0,10,utf8_decode('- je 2,5 Stunden Vorlesung ist eine Pause von ca. 15 Minuten vorgesehen'),0,0,'L');
-        $this->Ln(8);
-        $this->MultiCell(0,5,utf8_decode('- der Dozent muss zu jedem Vorlesungsthema entsprechende Prüfungsfragen freigeben bzw. zur Verfügung stellen' ), 0, 'L');
-        $this->Ln(1);
-        $this->MultiCell(0,5,utf8_decode('- der Dozent hat rechtzeitig (2 Wochen vorab) mit dem Fachbereichsleiter abzustimmen, welches Equipment/Material er benötigt'),0,'L');
-        $this->Ln(1);
-        $this->MultiCell(0,5,utf8_decode('- eventuelle Handouts/Kopiervolagen müssen 1 Woche im Voraus beim Fachbereichsleiter eingehen, um den rechtzeitigen Druck sicherzustellen'),0,'L');
-        $this->Ln(1);
-        $this->Cell(0,5,utf8_decode('- das Honorar berechnet sich aufgrund der tatsächlich gehaltenen Stunden'),0,0,'L');
-        $this->getLastpage();
     }
 
     public function getLastpage(){
