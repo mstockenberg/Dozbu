@@ -40,22 +40,23 @@
                 <input type="checkbox" name="correct"/>
             </div>
             <div class="clear"></div>
-            <div class="large-12 columns">
-                <div class="columns large-6">
-                    <label for="ba">Bachelordozent</label>
-                    <input type="checkbox" id="ba" name="ba"/>
-                </div>
-                <div class="columns large-6">
-                    <label for="diploma">Diplomadozent</label>
-                    <input type="checkbox" id="diploma" name="diploma"/>
-                </div>
-            </div>
-            <div class="clear"></div>
+
             <?php
                 if(isset($_GET['lecturerSelect'])){
                     echo '<p class="large-12 columns">Output:<br />'.str_replace(', ', '_',$precounter.$index).'.pdf</p>';
                 }
             ?>
+            <div class="large-12 columns diplba">
+                <div class="columns large-6" style="padding-left: 0px">
+                    <label for="ba">Bachelordozent</label>
+                    <input type="checkbox" id="ba" name="ba"/>
+                </div>
+                <div class="columns large-6" style="padding-left: 0px">
+                    <label for="diploma">Diplomadozent</label>
+                    <input type="checkbox" id="diploma" name="diploma"/>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
         <div class="row">
             <div class="large-12 columns">

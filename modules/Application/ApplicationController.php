@@ -18,7 +18,7 @@ class ApplicationController extends Controller
     public function run()
     {
         $this->view->setTemplate('tpl-index');
-        $module = (isset($this->request['p'])) ? $this->request['p'] : 'login';
+        $module = (isset($this->request['p'])) ? $this->request['p'] : 'booking';
         switch ($module) {
             case 'login':
                 $mod_login = new LoginController($this->session);

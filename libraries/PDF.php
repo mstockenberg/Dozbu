@@ -150,7 +150,7 @@ class PDF extends FPDF{
             if($this->PageNo() == $this->value){
                 $this->setY(-45);
                 $this->Cell(0,5,utf8_decode('Datum: '.$date[2].'.'.$date[1].'.'.$date[0]),0,0,'L');
-                $this->Cell(0,5,utf8_decode('Auftragsnummer: '.$_POST['pdfDataPerson']['0']['date'].'_'.$_POST['pdfDataPerson']['0']['counter']),0,0,'R');
+                $this->Cell(0,5,utf8_decode('Auftragsnummer: '.$_POST['pdfDataPerson']['0']['name'][0].'_'.trim($_POST['pdfDataPerson']['0']['name'][1]).'_'.$_POST['pdfDataPerson']['0']['date'].'_'.$_POST['pdfDataPerson']['0']['counter']),0,0,'R');
                 $this->Ln(18);
                 $this->Cell(40,10,utf8_decode('Dozent'),'T',0,'L');
                 $this->SetLeftMargin(159);
