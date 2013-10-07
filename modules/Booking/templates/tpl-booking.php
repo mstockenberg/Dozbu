@@ -48,11 +48,11 @@
             ?>
             <div class="large-12 columns diplba">
                 <div class="columns large-6" style="padding-left: 0px">
-                    <label for="ba">Bachelordozent</label>
+                    <label for="ba">Bachelor</label>
                     <input type="checkbox" id="ba" name="ba"/>
                 </div>
                 <div class="columns large-6" style="padding-left: 0px">
-                    <label for="diploma">Diplomadozent</label>
+                    <label for="diploma">Diploma</label>
                     <input type="checkbox" id="diploma" name="diploma"/>
                 </div>
             </div>
