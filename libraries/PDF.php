@@ -30,7 +30,7 @@ class PDF extends FPDF{
         $this->Ln(5);
         $this->Cell(0,10,utf8_decode('Bitte überprüfe & bestätige die Daten und sende mir ein unterschriebenes Exemplar zurück.'),0,0,'L');
         $this->Ln(5);
-        $this->Cell(0,10,utf8_decode('Bei Fragen und Problemen bin ich unter j.theiss@sae.edu oder 0341/30851622 zu erreichen.'),0,0,'L');
+        $this->Cell(0,10,utf8_decode('Bei Fragen und Problemen bin ich unter m.schaarschmidt@sae.edu oder +49 (0)341 30 85 16 27 zu erreichen.'),0,0,'L');
         $this->Ln(20);
         $this->BasicTable();
         $this->Ln(10);
