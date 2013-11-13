@@ -1,7 +1,23 @@
-This file was created by JetBrains PhpStorm 6.0.2 for binding GitHub repository
-This file was modified by JetBrains PhpStorm 6.0.2 for binding GitHub repository
-This file was modified by JetBrains PhpStorm 6.0.2 for binding GitHub repository
-This file was modified by JetBrains PhpStorm 6.0.2 for binding GitHub repository
-This file was modified by JetBrains PhpStorm 6.0.2 for binding GitHub repository
-This file was modified by JetBrains PhpStorm 6.0.2 for binding GitHub repository
-This file was modified by JetBrains PhpStorm 6.0.2 for binding GitHub repository
+Dozentenbuchungssystem SAE - Leipzig
+
+Installieren:
+- Die sb.sql file in die Lokale Datenbank importieren.
+- Die kompletten Daten vom Buchungsystem auf dem lokalen Server speichern.
+- Die Datenbank Verbindung im switch-case:'local' unter: Dozbu / config / Config.php auf die lokalen gegebenheiten anpassen.
+
+
+Individualisieren:
+- Unter Library / PDF.php in Zeile 33 den lokalen BiBer Kontakt einfügen.
+- Die Datenbanktabelle Lecturers muss geleert und mit den lokalen Dozentendaten gefüllt werden.
+
+
+Benutzername / Passwort:
+By Default: admin / admin
+
+
+Benutzung:
+  
+  ## WICHTIG ##
+  Den reiter CAS-Daten nach beendigung der Arbeit an dem Datensatz löschen.
+  
+Benutzung aufschlüsseln... //Marten info
