@@ -29,6 +29,7 @@ Loggout
 Wenn der Benutzer sich ausloggt, wird der aktuelle CAS-Datensatz geändert
 
 Dozenten verwalten
+Der Aktualisieren Button fügt einen neuen Dozenten hinzu (wenn Eingetragen) und aktualisiert Änderungen.
 Links in der Sidebar kann ein Dozent manuell Hinzugefügt werden.
 Auch hier kann jeder Datensatz angepasst werden.
 Die Spalte BA zeigt an ob ein Dozent ein BA dozent ist.
