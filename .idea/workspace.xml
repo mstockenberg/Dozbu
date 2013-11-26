@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb0159b6-b5ef-4809-a7c1-5629297b3c21" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Application/ApplicationController.php" afterPath="$PROJECT_DIR$/modules/Application/ApplicationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Booking/BookingController.php" afterPath="$PROJECT_DIR$/modules/Booking/BookingController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/CASview/CasviewController.php" afterPath="$PROJECT_DIR$/modules/CASview/CasviewController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/Config.php" afterPath="$PROJECT_DIR$/config/Config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/Model.php" afterPath="$PROJECT_DIR$/libraries/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/Session.php" afterPath="$PROJECT_DIR$/config/Session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Settings/SettingsController.php" afterPath="$PROJECT_DIR$/modules/Settings/SettingsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/CASview/getLectures.php" afterPath="$PROJECT_DIR$/modules/CASview/getLectures.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Booking/templates/tpl-booking.php" afterPath="$PROJECT_DIR$/modules/Booking/templates/tpl-booking.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Application/templates/tpl-index.php" afterPath="$PROJECT_DIR$/modules/Application/templates/tpl-index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/PDF.php" afterPath="$PROJECT_DIR$/libraries/PDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Upload/UploadController.php" afterPath="$PROJECT_DIR$/modules/Upload/UploadController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Upload/templates/tpl-upload.php" afterPath="$PROJECT_DIR$/modules/Upload/templates/tpl-upload.php" />
     </list>
     <ignored path="Dozbu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +29,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libraries/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="20" selection-start="1412" selection-end="1412" vertical-scroll-proportion="-5.9583335" vertical-offset="547" max-vertical-offset="5250">
+              <folding>
+                <marker date="1385475992000" expanded="true" signature="1012:1079" placeholder="SELECT * FRO..users..." />
+                <marker date="1385475992000" expanded="true" signature="1448:1488" placeholder="SELECT * FRO..lectures..." />
+                <marker date="1385475992000" expanded="true" signature="1693:1734" placeholder="SELECT * FRO..lecturers..." />
+                <marker date="1385475992000" expanded="true" signature="1945:2001" placeholder="SELECT * FRO..lecturers..." />
+                <marker date="1385475992000" expanded="true" signature="2312:2423" placeholder="SELECT b.*, ..lecturers..." />
+                <marker date="1385475992000" expanded="true" signature="3005:3104" placeholder="SELECT * FRO..lecturers..." />
+                <marker date="1385475992000" expanded="true" signature="3425:3450" placeholder="SELECT id_b ..lectures..." />
+                <marker date="1385475992000" expanded="true" signature="3912:4219" placeholder="INSERT INTO ..." />
+                <marker date="1385475992000" expanded="true" signature="5392:5746" placeholder="INSERT INTO ..." />
+                <marker date="1385475992000" expanded="true" signature="6281:6622" placeholder="INSERT INTO ..." />
+                <marker date="1385475992000" expanded="true" signature="7178:7232" placeholder="UPDATE lectu..." />
+                <marker date="1385475992000" expanded="true" signature="7488:7521" placeholder="UPDATE lectu..." />
+                <marker date="1385475992000" expanded="true" signature="7780:7918" placeholder="UPDATE lectu..." />
+                <marker date="1385475992000" expanded="true" signature="8786:9071" placeholder="UPDATE lectu..." />
+                <marker date="1385475992000" expanded="true" signature="10567:10730" placeholder="UPDATE lectu..." />
+                <marker date="1385475992000" expanded="true" signature="11744:11832" placeholder="UPDATE lectu..." />
+                <marker date="1385475992000" expanded="true" signature="12229:12265" placeholder="DELETE FROM ..." />
+                <marker date="1385475992000" expanded="true" signature="12493:12530" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="getLectures.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/CASview/getLectures.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,34 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cb_dozbu.lectures" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/63385ca5/73a8d5c9-bd7b-430e-8011-d15ca6307084/cb_dozbu..lectures">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tpl-index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Application/templates/tpl-index.php">
+      <file leaf-file-name="CasviewController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/CASview/CasviewController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="17" selection-start="877" selection-end="877" vertical-scroll-proportion="0.40823328" vertical-offset="212" max-vertical-offset="1110">
+            <state line="44" column="40" selection-start="1102" selection-end="1143" vertical-scroll-proportion="-13.125" vertical-offset="255" max-vertical-offset="720">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tpl-booking.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Booking/templates/tpl-booking.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="39" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-13.125" vertical-offset="195" max-vertical-offset="1740">
-              <folding>
-                <marker date="1385473082000" expanded="false" signature="3760:3810" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -94,28 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Session.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/Session.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="39" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.25" vertical-offset="165" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BookingController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Booking/BookingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="46" selection-start="1128" selection-end="1128" vertical-scroll-proportion="-3.125" vertical-offset="495" max-vertical-offset="1350">
+            <state line="48" column="33" selection-start="1381" selection-end="1381" vertical-scroll-proportion="-6.25" vertical-offset="480" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -124,7 +105,25 @@
       <file leaf-file-name="tpl-casview.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/CASview/templates/tpl-casview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="27" selection-start="625" selection-end="625" vertical-scroll-proportion="-3.75" vertical-offset="135" max-vertical-offset="870">
+            <state line="34" column="33" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-6.875" vertical-offset="345" max-vertical-offset="870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tpl-upload.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Upload/templates/tpl-upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="123" selection-start="179" selection-end="179" vertical-scroll-proportion="0.14814815" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Upload/UploadController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="104" column="40" selection-start="3691" selection-end="3691" vertical-scroll-proportion="-61.25" vertical-offset="0" max-vertical-offset="1635">
               <folding />
             </state>
           </provider>
@@ -162,23 +161,24 @@
         <option value="[Localhost] CONSOLE" />
         <option value="$PROJECT_DIR$/config/Database.php" />
         <option value="dbtable:/63385ca5/73a8d5c9-bd7b-430e-8011-d15ca6307084/cb_dozbu..lecturers" />
-        <option value="$PROJECT_DIR$/modules/Upload/UploadController.php" />
         <option value="$PROJECT_DIR$/modules/Settings/templates/tpl-settings.php" />
-        <option value="$PROJECT_DIR$/libraries/PDF.php" />
         <option value="$PROJECT_DIR$/css/screen.sass" />
         <option value="$PROJECT_DIR$/db.sql" />
         <option value="$PROJECT_DIR$/modules/CASview/getLectures.php" />
         <option value="dbtable:/63385ca5/73a8d5c9-bd7b-430e-8011-d15ca6307084/cb_dozbu..lectures" />
-        <option value="$PROJECT_DIR$/config/Config.php" />
         <option value="$PROJECT_DIR$/modules/Booking/BookingController.php" />
         <option value="$PROJECT_DIR$/config/Session.php" />
-        <option value="$PROJECT_DIR$/libraries/Model.php" />
         <option value="$PROJECT_DIR$/modules/Booking/templates/tpl-booking.php" />
         <option value="$PROJECT_DIR$/modules/CASview/CasviewController.php" />
         <option value="$PROJECT_DIR$/modules/CASview/templates/tpl-casview.php" />
         <option value="$PROJECT_DIR$/modules/Application/ApplicationController.php" />
         <option value="$PROJECT_DIR$/modules/Settings/SettingsController.php" />
         <option value="$PROJECT_DIR$/modules/Application/templates/tpl-index.php" />
+        <option value="$PROJECT_DIR$/config/Config.php" />
+        <option value="$PROJECT_DIR$/libraries/Model.php" />
+        <option value="$PROJECT_DIR$/libraries/PDF.php" />
+        <option value="$PROJECT_DIR$/modules/Upload/UploadController.php" />
+        <option value="$PROJECT_DIR$/modules/Upload/templates/tpl-upload.php" />
       </list>
     </option>
   </component>
@@ -271,6 +271,32 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Upload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dozbu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dozbu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Upload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -305,6 +331,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dozbu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dozbu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -667,8 +715,8 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21580547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13394342" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21580547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13394342" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294412" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39513677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="35" y="22" width="1245" height="778" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.500417" order="7" side_tool="true" content_ui="tabs" />
@@ -717,7 +765,7 @@
           </selected-grouping-rules>
         </breakpoints-dialog>
       </breakpoints-dialog>
-      <option name="time" value="42" />
+      <option name="time" value="47" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -733,20 +781,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Application/templates/tpl-index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="9" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/CASview/CasviewController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="327" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Login/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
@@ -777,31 +811,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/PDF.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="152" selection-start="7112" selection-end="7112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520" />
+        <state line="152" column="152" selection-start="7112" selection-end="7112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="20" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="5235">
           <folding>
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lectures..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT b.*, ..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT id_b ..lectures..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1385475992000" expanded="true" signature="1012:1079" placeholder="SELECT * FRO..users..." />
+            <marker date="1385475992000" expanded="true" signature="1448:1488" placeholder="SELECT * FRO..lectures..." />
+            <marker date="1385475992000" expanded="true" signature="1693:1734" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="1945:2001" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="2312:2423" placeholder="SELECT b.*, ..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="3005:3104" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="3425:3450" placeholder="SELECT id_b ..lectures..." />
+            <marker date="1385475992000" expanded="true" signature="3912:4219" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="5392:5746" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="6281:6622" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="7178:7232" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="7488:7521" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="7780:7918" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="8786:9071" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="10567:10730" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="11744:11832" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="12229:12265" placeholder="DELETE FROM ..." />
+            <marker date="1385475992000" expanded="true" signature="12493:12530" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -810,7 +846,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="48" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
           <folding>
-            <marker date="1385473082000" expanded="false" signature="3760:3810" placeholder="..." />
+            <marker date="1385473082000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -864,31 +900,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/PDF.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="152" selection-start="7112" selection-end="7112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520" />
+        <state line="152" column="152" selection-start="7112" selection-end="7112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="20" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="5235">
           <folding>
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lectures..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT b.*, ..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT id_b ..lectures..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1385475992000" expanded="true" signature="1012:1079" placeholder="SELECT * FRO..users..." />
+            <marker date="1385475992000" expanded="true" signature="1448:1488" placeholder="SELECT * FRO..lectures..." />
+            <marker date="1385475992000" expanded="true" signature="1693:1734" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="1945:2001" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="2312:2423" placeholder="SELECT b.*, ..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="3005:3104" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="3425:3450" placeholder="SELECT id_b ..lectures..." />
+            <marker date="1385475992000" expanded="true" signature="3912:4219" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="5392:5746" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="6281:6622" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="7178:7232" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="7488:7521" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="7780:7918" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="8786:9071" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="10567:10730" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="11744:11832" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="12229:12265" placeholder="DELETE FROM ..." />
+            <marker date="1385475992000" expanded="true" signature="12493:12530" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -897,7 +935,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="48" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1710">
           <folding>
-            <marker date="1385473082000" expanded="false" signature="3760:3810" placeholder="..." />
+            <marker date="1385473082000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -962,11 +1000,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Upload/UploadController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="9" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="1560" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Settings/templates/tpl-settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990" />
@@ -975,11 +1008,6 @@
     <entry file="file:///Library/Application Support/appsolute/MAMP PRO/phpMyAdmin/sql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="-2.5" vertical-offset="105" max-vertical-offset="15270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/PDF.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="152" selection-start="7112" selection-end="7112" vertical-scroll-proportion="0.0" vertical-offset="2280" max-vertical-offset="2520" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db.sql">
@@ -1036,48 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Booking/BookingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="46" selection-start="1128" selection-end="1128" vertical-scroll-proportion="-3.125" vertical-offset="495" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Booking/templates/tpl-booking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="39" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-13.125" vertical-offset="195" max-vertical-offset="1740">
-          <folding>
-            <marker date="1385473082000" expanded="false" signature="3760:3810" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="0" selection-start="10779" selection-end="10779" vertical-scroll-proportion="-5.9166665" vertical-offset="4163" max-vertical-offset="5250">
-          <folding>
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lectures..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT b.*, ..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..lecturers..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="SELECT id_b ..lectures..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1385472852000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/63385ca5/73a8d5c9-bd7b-430e-8011-d15ca6307084/cb_dozbu..lectures">
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
@@ -1088,37 +1074,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/CASview/CasviewController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="43" selection-start="464" selection-end="464" vertical-scroll-proportion="-8.75" vertical-offset="60" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/CASview/templates/tpl-casview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="625" selection-end="625" vertical-scroll-proportion="-3.75" vertical-offset="135" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="367" selection-end="367" vertical-scroll-proportion="0.3310463" vertical-offset="62" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Application/ApplicationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="71" selection-start="432" selection-end="432" vertical-scroll-proportion="-3.75" vertical-offset="135" max-vertical-offset="915">
           <folding />
         </state>
       </provider>
@@ -1132,7 +1090,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Application/templates/tpl-index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="17" selection-start="877" selection-end="877" vertical-scroll-proportion="0.40823328" vertical-offset="212" max-vertical-offset="1110">
+        <state line="25" column="6" selection-start="729" selection-end="729" vertical-scroll-proportion="-0.0" vertical-offset="375" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Login/templates/tpl-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="47" selection-end="47" vertical-scroll-proportion="0.025728988" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Application/ApplicationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="71" selection-start="432" selection-end="432" vertical-scroll-proportion="-3.75" vertical-offset="135" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="25" selection-start="366" selection-end="366" vertical-scroll-proportion="0.37221268" vertical-offset="38" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Booking/BookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="33" selection-start="1381" selection-end="1381" vertical-scroll-proportion="-6.25" vertical-offset="480" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Booking/templates/tpl-booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="39" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.45155394" vertical-offset="263" max-vertical-offset="1740">
+          <folding>
+            <marker date="1385473082000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/PDF.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="17" selection-start="3386" selection-end="3386" vertical-scroll-proportion="-5.625" vertical-offset="1110" max-vertical-offset="2535">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/CASview/templates/tpl-casview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="33" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-6.875" vertical-offset="345" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/CASview/CasviewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="40" selection-start="1102" selection-end="1143" vertical-scroll-proportion="-13.125" vertical-offset="255" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="20" selection-start="1412" selection-end="1412" vertical-scroll-proportion="-5.9583335" vertical-offset="547" max-vertical-offset="5250">
+          <folding>
+            <marker date="1385475992000" expanded="true" signature="1012:1079" placeholder="SELECT * FRO..users..." />
+            <marker date="1385475992000" expanded="true" signature="1448:1488" placeholder="SELECT * FRO..lectures..." />
+            <marker date="1385475992000" expanded="true" signature="1693:1734" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="1945:2001" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="2312:2423" placeholder="SELECT b.*, ..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="3005:3104" placeholder="SELECT * FRO..lecturers..." />
+            <marker date="1385475992000" expanded="true" signature="3425:3450" placeholder="SELECT id_b ..lectures..." />
+            <marker date="1385475992000" expanded="true" signature="3912:4219" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="5392:5746" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="6281:6622" placeholder="INSERT INTO ..." />
+            <marker date="1385475992000" expanded="true" signature="7178:7232" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="7488:7521" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="7780:7918" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="8786:9071" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="10567:10730" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="11744:11832" placeholder="UPDATE lectu..." />
+            <marker date="1385475992000" expanded="true" signature="12229:12265" placeholder="DELETE FROM ..." />
+            <marker date="1385475992000" expanded="true" signature="12493:12530" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Upload/UploadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="40" selection-start="3691" selection-end="3691" vertical-scroll-proportion="-61.25" vertical-offset="0" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Upload/templates/tpl-upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="123" selection-start="179" selection-end="179" vertical-scroll-proportion="0.14814815" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>

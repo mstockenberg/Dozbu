@@ -97,7 +97,7 @@ class Model
 
     public function getLectureOfLecturer()
     {
-        $sql = 'SELECT * FROM  lecturers a,  lectures b WHERE a.name = b.teacher AND a.id = :id';
+        $sql = 'SELECT * FROM  lecturers a,  lectures b WHERE a.name = b.teacher AND a.id = :id ORDER BY b.date ASC';
         $stmt = $this->db->prepare($sql);
         $stmt->execute(
             array(
@@ -136,7 +136,7 @@ class Model
                     (:course, :subject, :class, :chapter, :teacher, :location, :date, :time, :duration, :content, :att_type, :material)';
         $stmt = $this->db->prepare($sql);
         foreach ($csv as $k => $v) {
-            if ($v['0'] != 'Course' && $v['1'] != 'Subject') {
+            if (!empty($v) && $v['0'] != 'Course' && $v['1'] != 'Subject') {
                 $datum = explode('.', $v['6']);
                 $datum = strtotime($datum[2].'-'.$datum[1].'-'.$datum[0]);
                 $datum = date('Y-m-d', $datum);

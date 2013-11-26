@@ -15,7 +15,7 @@ class Config
         define ('OFFLINE', 0);
         define ('ADMIN', 1);
         define ('USER', 2);
-        error_reporting(-1);
+        error_reporting(0);
 
         switch ($env) {
             case 'local':

@@ -50,6 +50,8 @@ class UploadController extends Controller
         }
     }
 
+
+
     public function xml_upload()
     {
         if (isset($this->request['uploadSubmit'])) {
@@ -92,6 +94,15 @@ class UploadController extends Controller
 
     public function run()
     {
+
+        if (isset($this->request['deleteAll'])) {
+            $this->model->truncateTable('lectures');
+            header('Location: ' . BASE_URL . '?p=upload');
+            exit();
+        }
+
+        $csvData = $this->model->getLectures();
+        $this->view->csvData = $csvData;
         $this->view->setTemplate('tpl-upload');
         return $this->view;
     }

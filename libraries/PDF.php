@@ -12,7 +12,9 @@ class PDF extends FPDF{
 
     var $value = '';
 
+
     public function HeaderContent(){
+        $_POST['completeTime'] = 0;
         $this->image('./img/sae_logo.png', 165, 30, 33);
         $this->SetFont('Arial','',13);
         $this->Cell(1);
@@ -78,7 +80,6 @@ class PDF extends FPDF{
                 $this->Cell(12,6,' - ',1,0,'C');
                 $this->Cell(12,6,' - ',1,0,'C');
                 $this->Ln();
-                $_POST['CompleteTime'] -= $value['duration'];
 
             }else{
                 $this->SetFont('Arial','',10);
