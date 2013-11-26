@@ -14,8 +14,6 @@ Individualisieren:
 Benutzername / Passwort:
 By Default: admin / admin
 
-## WICHTIG ##
-Den reiter CAS-Daten nach beendigung der Arbeit an dem Datensatz löschen. - Bis Update
 
 Benutzung:
 Editieren: Einfach ins Feld klicken, Daten ändern und auf Aktualisieren klicken.
@@ -27,11 +25,6 @@ Der Upload erlaubt XML und csv dateien.
 XML = Datensatz Dozenten (Wenn vorhanden)
 CSV ) = Cas Datensatz
 
-CAS Datenansicht
-Zeigt den kompletten CAS Datensatz.
-WICHTIG Nach beendigung der Arbeit auf "Tabelle Leeren" klicken sonst wird die Datenbank zugemüllt.
-Ein Update wird das bei Logout automatisieren.
-
 Dozenten verwalten
 Links in der Sidebar kann ein Dozent manuell Hinzugefügt werden.
 Auch hier kann jeder Datensatz angepasst werden.
@@ -40,6 +33,7 @@ Die Spalte BA zeigt an ob ein Dozent ein BA dozent ist.
 Buchung Erzeugen
 Aus der Liste kann ein Dozent gewählt werden. Der Zugehörige Datensatz (CAS Daten) wird dazu geladen.
 Jedes Feld ist editierbar. Alle Änderungen mit Aktualisieren bestätigen.
+Wenn der Dozent editiert wird und in einen anderen geändert wird, dann springt der Datensatz zu dem neuen Dozenten.
 Die Auftragsnummer zählt automatisch hoch. Korrektur erlaubt es die gleiche Auftragsnummer zweimal auszugeben ohne das der Counter hochzählt.
 Bachelor oder Diploma kennzeichnen den Stundenzettel als Bachelorvorlesung oder Diplomavorlesung.
 PDF Vorschau: Die PDF wird angezeigt ohne dass die NUmmer hochzählt.
