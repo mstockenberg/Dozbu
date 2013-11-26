@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/foundation.css">
     <script src="js/vendor/custom.modernizr.js"></script>
-    <script src="./js/jquery2.js"></script>
+    <script src="./js/jquery-2.0.js"></script>
+    <script src="./js/script.js"></script>
     <script>
     $(document).ready(function(){
         $('.deleteLabel').click(function(){
@@ -26,7 +27,7 @@
 
 <div id="wrapper">
     <div class="row navi">
-        <?php if($_SESSION['status'] == admin && $_COOKIE['LOGGED_IN'] == true){
+        <?php if($_SESSION['status'] == 'admin' && $_COOKIE['LOGGED_IN'] == true){
             echo'
                 <nav class="">
                     <a href="'.$_SERVER['PHP_SELF'] .'?p=booking" class="button">Buchung Erzeugen</a>
@@ -55,11 +56,6 @@
 <footer>
     <p>Idea by Joachim Theiss @ SAE Leipzig | port to PHP by Marten Stockenberg @ SAE Leipzig - 2013</p>
 </footer>
-<script>
-    document.write('<script src=' +
-        ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-        '.js><\/script>')
-</script>
 
 <script src="js/foundation.min.js"></script>
 <script src="js/foundation/foundation.forms.js"></script>

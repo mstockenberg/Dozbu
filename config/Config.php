@@ -17,7 +17,6 @@ class Config
         define ('USER', 2);
         error_reporting(0);
 
-
         switch ($env) {
             case 'local':
                 define('DB_HOST', 'localhost');

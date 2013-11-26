@@ -3,10 +3,14 @@
 class Session
 {
 
+    var $model;
+
     public function __construct()
     {
         session_start();
         session_name('LOGIN');
+        $this->request = array_merge($_GET, $_POST);
+        $this->model = new Model();
         $this->checkSession();
     }
 
@@ -14,10 +18,11 @@ class Session
     {
         if (!isset($_SESSION['lastdone'])) {
             $_SESSION['lastdone'] = time();
-        } elseif ($_REQUEST['action'] == 'logout' || $_SESSION['lastdone'] + 3600 < time()) {
+        } elseif ($this->request['action'] == 'logout' || $_SESSION['lastdone'] + 3600 < time()) {
             unset($_SESSION['status']);
             unset($_COOKIE['LOGGED_IN']);
             session_destroy();
+            $this->model->truncateTable('lectures');
         } else {
             $_SESSION['lastdone'] = time();
         }
