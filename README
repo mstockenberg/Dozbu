@@ -25,6 +25,9 @@ Der Upload erlaubt XML und csv dateien.
 XML = Datensatz Dozenten (Wenn vorhanden)
 CSV ) = Cas Datensatz
 
+Loggout
+Wenn der Benutzer sich ausloggt, wird der aktuelle CAS-Datensatz geändert
+
 Dozenten verwalten
 Links in der Sidebar kann ein Dozent manuell Hinzugefügt werden.
 Auch hier kann jeder Datensatz angepasst werden.
