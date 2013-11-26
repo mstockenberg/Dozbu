@@ -32,7 +32,7 @@
     <table>
         <tr>
             <td><a href="" class="deleteLabel">löschen</a></td>
-            <td>Nachname, Vorname</td>
+            <td>Name, Vorname</td>
             <td>Straße, Nr.</td>
             <td>PLZ</td>
             <td>Ort</td>
