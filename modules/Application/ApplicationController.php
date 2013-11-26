@@ -13,12 +13,13 @@ class ApplicationController extends Controller
         $this->view = new View();
         $this->request = array_merge($_GET, $_POST);
         $this->session = new Session();
+        $this->arrValid = array('login', 'upload', 'booking', 'settings');
     }
 
     public function run()
     {
         $this->view->setTemplate('tpl-index');
-        $module = (isset($this->request['p'])) ? $this->request['p'] : 'booking';
+        $module = (isset($this->request['p']) && in_array($this->request['p'], $this->arrValid)) ? $this->request['p'] : 'booking';
         switch ($module) {
             case 'login':
                 $mod_login = new LoginController($this->session);
@@ -44,11 +45,11 @@ class ApplicationController extends Controller
                 $this->view->path = 'Settings';
                 break;
 
-            case 'casview':
-                $mod_casview = new CasviewController();
-                $this->view->siteContent = $mod_casview->run();
-                $this->view->path = 'CASview';
-                break;
+//            case 'casview':
+//                $mod_casview = new CasviewController();
+//                $this->view->siteContent = $mod_casview->run();
+//                $this->view->path = 'CASview';
+//                break;
         }
         return $this->view->parse();
     }

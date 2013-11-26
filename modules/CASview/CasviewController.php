@@ -22,7 +22,7 @@ class CasviewController extends Controller
 
     public function run()
     {
-        if ($this->request['delete']) {
+        if (isset($this->request['delete'])) {
             $this->model->deleteLecture($this->request['delete']);
             header('Location: ' . BASE_URL . '?p=casview');
             exit();

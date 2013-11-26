@@ -110,7 +110,7 @@ class Model
 
     public function getDataForUpdateFromBooking()
     {
-        $sql = 'SELECT b.id_b, a.* FROM lectures b, lecturers a';
+        $sql = 'SELECT id_b FROM lectures';
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -282,15 +282,16 @@ class Model
     {
         $data = $this->getDataForUpdateFromBooking();
         $adress = explode(',', str_replace('&#10;', '',$this->request['update_adress']));
-        $sql = 'UPDATE lectures SET course = :course, subject = :subject, chapter = :chapter, date = :date, time = :time, duration = :duration WHERE id_b = :id';
+        $sql = 'UPDATE lectures SET course = :course, subject = :subject, teacher = :teacher, chapter = :chapter, date = :date, time = :time, duration = :duration WHERE id_b = :id';
         $stmt = $this->db->prepare($sql);
         foreach ($data as $k => $v) {
-            if ($this->request['id_' . $v['id_b']] == $v['id_b']) {
+            if (isset($this->request['id_' . $v['id_b']]) && $this->request['id_' . $v['id_b']] == $v['id_b']) {
                 $stmt->execute(
                     array(
                         ':id'       => $this->request['id_' . $v['id_b']],
                         ':course'   => $this->request['update_course_' . $v['id_b']],
                         ':subject'  => $this->request['update_subject_' . $v['id_b']],
+                        ':teacher'  => $this->request['update_teacher_' . $v['id_b']],
                         ':chapter'  => $this->request['update_chapter_' . $v['id_b']],
                         ':date'     => $this->request['update_date_' . $v['id_b']],
                         ':time'     => $this->request['update_time_' . $v['id_b']],

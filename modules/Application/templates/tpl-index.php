@@ -32,11 +32,12 @@
                 <nav class="">
                     <a href="'.$_SERVER['PHP_SELF'] .'?p=booking" class="button">Buchung Erzeugen</a>
                     <a href="'.$_SERVER['PHP_SELF'] .'?p=settings" class="button">Dozenten verwalten</a>
-                    <a href="'.$_SERVER['PHP_SELF'] .'?p=casview" class="button">CAS Datenansicht</a>
                     <a href="'.$_SERVER['PHP_SELF'] .'?p=upload" class="button success">Upload</a>
                     <a href="'.$_SERVER['PHP_SELF'] .'?action=logout" class="button alert logout">Logout</a>
                 </nav>
             ';
+            //  <a href="'.$_SERVER['PHP_SELF'] .'?p=casview" class="button">CAS Datenansicht</a>
+
         }?>
         <img src="img/sae_logo.png" class="logo" width="110" height="70"/>
 

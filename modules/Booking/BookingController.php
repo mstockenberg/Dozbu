@@ -18,8 +18,8 @@ class BookingController extends Controller
         $this->model = new Model();
         $this->request = array_merge($_GET, $_POST);
         $this->pdf = new PDF();
-
     }
+
 
     public function generatePDFIndex(){
         $data = $this->model->getLecturer();
@@ -42,7 +42,7 @@ class BookingController extends Controller
     public function run()
     {
 
-        if ($this->request['pdfSubmit'] || isset($this->request['getPDF']) || isset($this->request['pdfPreview'])){
+        if (isset($this->request['pdfSubmit']) || isset($this->request['getPDF']) || isset($this->request['pdfPreview'])){
             if(isset($this->request['pdfSubmit'])){
                 $this->model->updateIndex($this->request['lecturerSelect']);
             }
@@ -62,7 +62,7 @@ class BookingController extends Controller
             // TODO Unterscheiden ob BA oder Diploma Dozent
         }
 
-        if ($this->request['delete']) {
+        if (isset($this->request['delete'])) {
             $this->model->deleteLecture($this->request['delete']);
             header('Location: ' . BASE_URL . '?p=booking');
             exit();

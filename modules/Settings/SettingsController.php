@@ -20,7 +20,7 @@ class SettingsController extends Controller
 
     public function run()
     {
-        if ($this->request['delete']) {
+        if (isset($this->request['delete'])) {
             $this->model->deleteLecturer($this->request['delete']);
             header('Location: ' . BASE_URL . '?p=settings');
             exit();

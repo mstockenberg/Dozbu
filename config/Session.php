@@ -18,7 +18,7 @@ class Session
     {
         if (!isset($_SESSION['lastdone'])) {
             $_SESSION['lastdone'] = time();
-        } elseif ($this->request['action'] == 'logout' || $_SESSION['lastdone'] + 3600 < time()) {
+        } elseif (isset($this->request['action']) && $this->request['action'] == 'logout' || $_SESSION['lastdone'] + 3600 < time()) {
             unset($_SESSION['status']);
             unset($_COOKIE['LOGGED_IN']);
             session_destroy();

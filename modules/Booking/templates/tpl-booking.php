@@ -27,13 +27,13 @@
         <div class="row">
             <div class="large-12 column">
                 <h5>Adresse</h5>
-                <textarea id="adress" name="update_adress" class="large-12"><?php echo($street.'&#10;'.$postcode.'&#10;'.$city); ?></textarea>
+                <textarea id="adress" name="update_adress" class="large-12"><?php if(isset($street) && isset($postcode) && isset($city)){echo($street.'&#10;'.$postcode.'&#10;'.$city);} ?></textarea>
             </div>
         </div>
         <div class="row">
             <div class="large-6 columns">
                 <h5>Auftragsnummer</h5>
-                <input type="text" value="<?php echo $index ?>" name=""/>
+                <input type="text" value="<?php if(isset($index)){ echo $index; } ?>" name=""/>
             </div>
             <div class="large-6 columns">
                 <h5>Korrektur</h5>
@@ -73,6 +73,7 @@
             <td><a href="" class="deleteLabel">löschen</a></td>
             <td>Datum</td>
             <td>Thema</td>
+            <td>Dozent</td>
             <td>Kurs</td>
             <td>Block</td>
             <td>Start</td>
@@ -93,6 +94,7 @@
                             <input type="hidden" value="'.str_replace(', ', '_',$precounter.$index).'.pdf" form="bookingform" name="filename" /></td>
                             <td><input type="text" value="'.$v['date'].'" form="bookingform" name="update_date_'.$v['id_b'].'" /></td>
                             <td><input type="text" value="'.$v['subject'].'" form="bookingform" name="update_subject_'.$v['id_b'].'" /></td>
+                            <td><input type="text" value="'.$v['teacher'].'" form="bookingform" name="update_teacher_'.$v['id_b'].'" /></td>
                             <td><input type="text" value="'.$v['course'].'" form="bookingform" name="update_course_'.$v['id_b'].'" /></td>
                             <td><input type="text" value="'.$v['chapter'].'" form="bookingform" name="update_chapter_'.$v['id_b'].'" /></td>
                             <td><input type="text" value="'.$v['time'].'" form="bookingform" name="update_time_'.$v['id_b'].'" /></td>
