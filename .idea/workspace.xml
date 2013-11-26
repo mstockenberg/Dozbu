@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb0159b6-b5ef-4809-a7c1-5629297b3c21" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Settings/templates/tpl-settings.php" afterPath="$PROJECT_DIR$/modules/Settings/templates/tpl-settings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
     </list>
     <ignored path="Dozbu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tpl-settings.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tpl-settings.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Settings/templates/tpl-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="22" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.22222222" vertical-offset="420" max-vertical-offset="990">
+            <state line="34" column="22" selection-start="1277" selection-end="1277" vertical-scroll-proportion="-3.75" vertical-offset="420" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -98,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="94" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="750">
+            <state line="27" column="3" selection-start="953" selection-end="953" vertical-scroll-proportion="0.4055944" vertical-offset="231" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -165,8 +164,8 @@
         <option value="$PROJECT_DIR$/libraries/PDF.php" />
         <option value="$PROJECT_DIR$/modules/Upload/UploadController.php" />
         <option value="$PROJECT_DIR$/modules/Upload/templates/tpl-upload.php" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/modules/Settings/templates/tpl-settings.php" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -1182,13 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="94" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Booking/templates/tpl-booking.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="39" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-1.1481482" vertical-offset="975" max-vertical-offset="1740">
@@ -1200,7 +1192,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Settings/templates/tpl-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.22222222" vertical-offset="420" max-vertical-offset="990">
+        <state line="34" column="22" selection-start="1277" selection-end="1277" vertical-scroll-proportion="-3.75" vertical-offset="420" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="3" selection-start="953" selection-end="953" vertical-scroll-proportion="0.4055944" vertical-offset="231" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
