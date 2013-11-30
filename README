@@ -3,6 +3,7 @@ Dozentenbuchungssystem SAE - Leipzig
 Installieren:
 - Die sb.sql file in die Lokale Datenbank importieren.
 - Die kompletten Daten vom Buchungsystem auf dem lokalen Server speichern.
+- im Root verzeichnis den Ordner "uploads" mit den Unterordnern "csv" und "xml" hinzufügen
 - Die Datenbank Verbindung im switch-case:'local' unter: Dozbu / config / Config.php auf die lokalen gegebenheiten anpassen.
 
 
